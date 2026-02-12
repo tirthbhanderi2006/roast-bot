@@ -1,7 +1,5 @@
 from collections import deque
 
-# BUG #8 FIX: Used a deque with a maxlen to automatically discard old messages
-# This keeps only the last 5 exchanges (10 messages total)
 MAX_MEMORY = 5
 chat_history = deque(maxlen=MAX_MEMORY)
 

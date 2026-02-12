@@ -40,8 +40,6 @@ def chat(user_input: str) -> str:
     # Get conversation history
     history = format_memory()
 
-    # BUG #5b — context and history not injected into prompt
-    # prompt = SYSTEM_PROMPT + f"\n\nUser: {user_input + context + history}"
     prompt = (
         f"{SYSTEM_PROMPT}\n\n"
         f"Use this roast context for inspiration: {context}\n\n"

@@ -42,8 +42,7 @@ def build_index(chunks: list[str], embedding_model):
     index.add(np.array(embeddings).astype("float32"))
     return index
 
-# chunks = load_and_chunk(DATA_PATH)
-# index = build_index(chunks, EMBEDDING_MODEL)
+
 
 CHUNKS = load_and_chunk(DATA_PATH)
 INDEX = build_index(CHUNKS,EMBEDDING_MODEL)
@@ -59,8 +58,6 @@ def retrieve_context(query: str, top_k: int = 1) -> str:
     Returns:
         Concatenated relevant text chunks.
     """
-    # BUG #1 — model loaded inside function (every cal
-    # Encode query using the global model
     query_embedding = EMBEDDING_MODEL.encode([query])
 
    
