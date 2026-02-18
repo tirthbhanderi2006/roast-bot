@@ -47,4 +47,4 @@ roastbot-challenge/
 └── data/
     └── roast_data.txt  # Roast knowledge base
 ```
-
+### Collaborators: [tirth bhanderi](https://github.com/tirthbhanderi2006/), [Manan Panchal](https://github.com/mananjp/) ,[Ansh Dhanani](https://github.com/Ansh-Dhanani/), [Hitarth Khatiwala](https://github.com/hitarth1812/)
